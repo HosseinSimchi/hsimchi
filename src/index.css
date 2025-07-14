@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --accent-color: #b775ff;
-  --secondary-color: ;
-  --dark-color: #2d2d2d;
-  --white-color: #ffffff;
+  --accent-color: #e74c3c;
+  --secondary-color: #2c3e50;
+  --dark-color: #fafafa;
+  --white-color: #333333;
   --grey-color: #777777;
-  --body-text-color: #333333;
-  --light-text-color: #929292;
+  --body-text-color: #2c3e50;
+  --light-text-color: #2c3e50;
   --link-color: #b7c177;
   --background-color: #fafafa;
 
@@ -50,7 +50,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.688rem;
-  background-color: #0f0e10;
+  background-color: #f5f7fa;
   color: var(--white-color);
 }
 
@@ -149,7 +149,7 @@ a:hover {
 
 .btn-gradient {
   --bs-btn-color: #fff;
-  background-image: linear-gradient(to right, #7710e9, #8f3aec);
+  background-image: linear-gradient(to right, #e82c17, #e74c3c);
   border: 0;
 }
 
@@ -159,7 +159,7 @@ a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #7710e9;
+  background: #e74c3c;
   border: none;
   color: white;
   cursor: pointer;
@@ -172,7 +172,7 @@ a:hover {
 
 .button:hover {
   color: white;
-  background: #7710e9;
+  background: #e12510;
 }
 
 .button span {
@@ -188,7 +188,7 @@ a:hover {
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle closest-side, #8f3aec, transparent);
+  background: radial-gradient(circle closest-side, #e75949, transparent);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease;
@@ -203,7 +203,7 @@ a:hover {
 .dropdown-item.active,
 .dropdown-item:active {
   --bs-dropdown-link-active-color: var(--white-color);
-  --bs-dropdown-link-active-bg: var(--light-text-color);
+  --bs-dropdown-link-active-bg: white;
 }
 
 /* bootstrap Pagination override
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .accordion-item {
-  border: solid rgba(255, 255, 255, 0.226) 1px;
+  border: solid #e74c3c 1px;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -270,7 +270,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 111;
-  background: #0f0e10;
+  background: #f5f7fa;
 }
 
 .loader {
@@ -283,7 +283,7 @@ a:hover {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #7710e9;
+  border-top-color: #2c3e50;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -297,7 +297,7 @@ a:hover {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #8f3aec;
+  border-top-color: #153351;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -311,7 +311,7 @@ a:hover {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #b775ff;
+  border-top-color: #16334f;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -371,7 +371,7 @@ a.nav-link:hover {
 @media only screen and (max-width: 991px) {
   nav.navbar {
     font-size: 25px;
-    border-bottom: #2d2d2d;
+    border-bottom: #e74c3c;
   }
 }
 

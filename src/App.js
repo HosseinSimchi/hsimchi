@@ -127,7 +127,7 @@ function App() {
         <div className="container-fluid padding-side">
           <a className="navbar-brand" href="index.html">
             <h1 className="mt-[8px] font-bold text-[38px]">
-              HOSSEIN<span className="text-[#b775ff]">SIMCHI</span>
+              HOSSEIN<span className="text-[#E74C3C]">SIMCHI</span>
             </h1>
           </a>
 
@@ -190,14 +190,20 @@ function App() {
                     {" "}
                     Works
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className="bg-[#e1e3e7] dropdown-menu mt-3">
                     <li>
-                      <a href="blog.html" className="dropdown-item">
+                      <a
+                        href="blog.html"
+                        className="dropdown-item text-[#2C3E50] hover:bg-[#d0d2d5] hover:text-[#2C3E50]"
+                      >
                         Machine Learning
                       </a>
                     </li>
                     <li>
-                      <a href="single-post.html" className="dropdown-item">
+                      <a
+                        href="single-post.html"
+                        className="dropdown-item text-[#2C3E50] hover:bg-[#d0d2d5] hover:text-[#2C3E50]"
+                      >
                         Front-end Development
                       </a>
                     </li>
@@ -205,7 +211,7 @@ function App() {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="border-2 nav-link fw-bold border-bottom border-primary"
+                    className="border-2 nav-link fw-bold border-bottom border-danger"
                     href="#"
                   >
                     Let’s talk
@@ -222,7 +228,7 @@ function App() {
           <div className="text-center row justify-content-center">
             <div className="col-xl-8">
               <p
-                className="letter-space text-primary fs-4"
+                className="letter-space text-[#2C3E50] fs-4"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
