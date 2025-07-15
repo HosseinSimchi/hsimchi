@@ -378,7 +378,7 @@ a.nav-link:hover {
 /*---- hero section style start ----*/
 @media only screen and (min-width: 999px) {
   .banner-size {
-    font-size: 120px;
+    font-size: 110px;
   }
 }
 

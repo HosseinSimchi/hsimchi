@@ -214,7 +214,7 @@ function App() {
                     className="border-2 nav-link fw-bold border-bottom border-danger"
                     href="#"
                   >
-                    Let’s talk
+                    Contact
                   </a>
                 </li>
               </ul>
@@ -228,7 +228,7 @@ function App() {
           <div className="text-center row justify-content-center">
             <div className="col-xl-8">
               <p
-                className="letter-space text-[#2C3E50] fs-4"
+                className="letter-space text-[#2C3E50] fs-4 mb-2"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
@@ -239,12 +239,21 @@ function App() {
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                Logo & Web Designer <br /> Based in Newyork.
+                Data Scientist & Front-End Developer <br />
               </h2>
-              <p data-aos="fade-up" data-aos-duration="1400">
-                I help businesses transform their visions into <br /> impactful
-                visual identities and stunning online presences.
-              </p>
+              <div className="flex justify-center mt-5 mb-5">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                  className="text-[#2c3e50] text-center w-[80%]"
+                >
+                  I thrive at the intersection of AI and web development,
+                  seeking opportunities to combine the two fields in meaningful
+                  ways. Whether it’s crafting seamless user interfaces or
+                  designing intelligent systems, I am always eager to learn,
+                  experiment, and grow.
+                </p>
+              </div>
               <a
                 href="portfolio.html"
                 className="mt-4 btn button rounded-pill position-relative pe-5 z-1"
@@ -267,19 +276,17 @@ function App() {
         </div>
       </section>
       <div class="container-fluid padding-side position-relative">
-        <div class="top-0 position-absolute start-50 translate-middle d-none d-xxl-block">
-          <img src="images/bg-pattern.png" alt="bg-img" class="image-fluid" />
-        </div>
-        <div class="position-absolute top-100 start-50 translate-middle d-none d-xxl-block">
-          <img src="images/bg-pattern.png" alt="bg-img" class="image-fluid" />
-        </div>
         <div
-          class="border border-opacity-25 border-light rounded-5"
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.06)",
-            boxShadow: "0px 12px 90px rgba(106, 30, 188, 0.2)",
-          }}
-        >
+          class="h-[7px] w-[30%] mx-auto my-8 
+            bg-gradient-to-r 
+            from-transparent 
+            via-[#2f3f50] via-[40%] 
+            via-[#243a4f] via-[50%] 
+            via-[#2f3f50] via-[60%] 
+            to-transparent
+            animate-pulse-custom"
+        ></div>
+        <div class="border border-opacity-25 border-light rounded-5 bg-[#ffffff0f] shadow-[0px_12px_90px_#ffcac4] mb-16 p-4">
           <section id="achievements" class="padding-medium">
             <div class="container process-content" data-aos="fade-up">
               <div id="counter" class="text-center row justify-content-center">
@@ -287,11 +294,11 @@ function App() {
                   <div class="d-flex justify-content-center align-items-center">
                     <h4
                       class="counter-value display-1 banner-size"
-                      data-count="25"
+                      data-count="2"
                     >
-                      10
+                      2
                     </h4>
-                    <span class="text-primary display-1 fw-lighter">+</span>
+                    <span class="text-[#e74c3c] display-1 fw-lighter">+</span>
                   </div>
                   <p class="mb-0 text-capitalize">years experience</p>
                 </div>
@@ -299,34 +306,37 @@ function App() {
                   <div class="d-flex justify-content-center align-items-center">
                     <h4
                       class="counter-value display-1 banner-size"
-                      data-count="390"
+                      data-count="4"
                     >
-                      300
+                      4
                     </h4>
-                    <span class="text-primary display-1 fw-lighter">+</span>
+                    <span class="text-[#e74c3c] display-1 fw-lighter">+</span>
                   </div>
-                  <p class="mb-0 text-capitalize">Satisfied clients</p>
+                  <p class="mb-0 text-capitalize">Publications</p>
                 </div>
                 <div class="text-center col-lg-3 col-6">
                   <div class="d-flex justify-content-center align-items-center">
                     <h4
                       class="counter-value display-1 banner-size"
-                      data-count="550"
+                      data-count="500"
                     >
                       500
                     </h4>
-                    <span class="text-primary display-1 fw-lighter">+</span>
+                    <span class="text-[#e74c3c] display-1 fw-lighter">+</span>
                   </div>
                   <p class="mb-0 text-capitalize">Projects done</p>
                 </div>
                 <div class="text-center col-lg-3 col-6">
-                  <h4
-                    class="counter-value display-1 banner-size"
-                    data-count="15"
-                  >
-                    0
-                  </h4>
-                  <p class="mb-0 text-capitalize">Winning awards </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <h4
+                      class="counter-value display-1 banner-size"
+                      data-count="50"
+                    >
+                      50
+                    </h4>
+                    <span class="text-[#e74c3c] display-1 fw-lighter">+</span>
+                  </div>
+                  <p class="mb-0 text-capitalize">Certifications </p>
                 </div>
               </div>
             </div>
@@ -337,28 +347,93 @@ function App() {
               <div class="row" data-aos="fade-up" data-aos-duration="1500">
                 <div class="mb-5 col-lg-6 mb-lg-0">
                   <h3 class="mb-4 display-3">
-                    Experiences<span class="text-primary">.</span>
+                    Experiences<span class="text-[#e74c3c]">.</span>
                   </h3>
-                  <div class="mb-5 border-opacity-50 border-start border-primary ps-3">
-                    <p class="text-primary fw-semibold">2007 - 2012</p>
-                    <h5 class="display-6">Creative Agency Inc.: Design head</h5>
+                  <div class="mb-5 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <p class="text-[#e74c3c] fw-semibold">2021 - 2022</p>
+                    <h5 class="display-6">
+                      Sadra University: Teaching Professional
+                    </h5>
                     <p>
-                      Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam.
-                      Impedit aperiam nesciunt facilis!
+                      Teaching Programming Language, DataBase and Algorithm
+                      Design
                     </p>
                   </div>
-                  <div class="border-opacity-50 border-start border-primary ps-3">
-                    <p class="text-primary fw-semibold">2013 - present</p>
-                    <h5 class="display-6">Studio Alpha.: Project Manager</h5>
-                    <p>
-                      Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam.
-                      Impedit aperiam nesciunt facilis!
-                    </p>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3 mb-5">
+                    <p class="text-[#e74c3c] fw-semibold">2021 - 2022</p>
+                    <h5 class="display-6">
+                      Shahid Beheshti University: Teaching Assistant
+                    </h5>
+                    <div className="flex justify-center ">
+                      <p className="w-[85%]">
+                        Machine Learning and Pattern Recognition Course ( Master
+                        and PhD ) - Prof. Ahmad Ali Abin
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3 mb-5">
+                    <p class="text-[#e74c3c] fw-semibold">2024 - 2025</p>
+                    <h5 class="display-6">
+                      MAPNA Group - MECO (MAPNA Electric & Control, Engineering
+                      & Manufacturing): Front-end developer
+                    </h5>
+                    <div className="flex justify-center ">
+                      <p className="w-[85%]">
+                        Frontend engineer specializing in React and Angular
+                        development, with strong focus on unit testing
+                        (Jest/Karma) and technical documentation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3 mb-5">
+                    <p class="text-[#e74c3c] fw-semibold">2025</p>
+                    <h5 class="display-6">
+                      MAPNA Group - MECO (MAPNA Electric & Control, Engineering
+                      & Manufacturing): Unit test workshop
+                    </h5>
+                    <div className="flex justify-center ">
+                      <p className="w-[85%]">
+                        Experienced workshop instructor who has taught 5+ hours
+                        of hands-on unit testing in Angular and React, helping
+                        developers build confidence in test-driven development
+                        (Jest/Karma/Testing Library).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3 mb-5">
+                    <p class="text-[#e74c3c] fw-semibold">2025 - Present</p>
+                    <h5 class="display-6">
+                      MAPNA Group - MAPNA DIGITAL: Front-end developer
+                    </h5>
+                    <div className="flex justify-center ">
+                      <p className="w-[85%]">
+                        Frontend engineer specializing in React and Angular
+                        development, with strong focus on unit testing
+                        (Jest/Karma) and technical documentation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3 mb-5">
+                    <p class="text-[#e74c3c] fw-semibold">2022 - Present</p>
+                    <h5 class="display-6">
+                      Self-Taught Machine Learning Engineer | Big Data & MLOps
+                      Engineer
+                    </h5>
+                    <div className="flex justify-center ">
+                      <p className="w-[85%]">
+                        Practical ML engineer with expertise in scalable data
+                        pipelines and production-grade MLOps. Passionate about
+                        designing robust systems that handle large-scale data
+                        while ensuring efficient model training, deployment, and
+                        monitoring.
+                      </p>
+                    </div>
                   </div>
                 </div>
+                {/* TODO: */}
                 <div class="col-lg-6">
                   <h3 class="mb-4 display-3">
-                    Core Skills<span class="text-primary">.</span>
+                    Core Skills<span class="text-[#e74c3c]">.</span>
                   </h3>
                   <div class="mb-4 border-opacity-50 border-start border-primary ps-3">
                     <h5 class="display-6">Logo Design</h5>
