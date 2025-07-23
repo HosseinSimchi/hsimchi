@@ -194,6 +194,11 @@ a:hover {
   transition: width 0.2s ease, height 0.2s ease;
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #e75949;
+}
+
 .button:hover::before {
   --size: 400px;
 }
@@ -385,17 +390,17 @@ a.nav-link:hover {
 /*---- portfolio section style start ----*/
 button.filter-button {
   border: none;
-  background-color: #423b4a;
+  background-color: #dc938b;
   color: var(--white-color);
   border-radius: 30px;
 }
 
 button.filter-button.active {
-  background-image: linear-gradient(to right, #7710e9, #8f3aec);
+  background-image: linear-gradient(to right, #e74c3c, #e52b17);
 }
 
 button.filter-button:hover {
-  background-image: linear-gradient(to right, #7710e9, #8f3aec);
+  background-image: linear-gradient(to right, #e56253, #e52b17);
 }
 
 /* Image zoom effect on hover */

@@ -1,7 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS styles
+import prj1 from "./assets/images/project1.jpg";
+import prj2 from "./assets/images/project2.jpg";
+import prj3 from "./assets/images/project3.jpg";
+import prj4 from "./assets/images/project4.jpg";
+import prj5 from "./assets/images/project5.jpg";
+import prj6 from "./assets/images/project6.jpg";
+
+// Updated imports (Swiper v9+)
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper"; // <-- Changed from 'swiper/modules'
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation"; // Add navigation CSS
+import "swiper/css/autoplay"; // Add autoplay CSS
 
 function App() {
   useEffect(() => {
@@ -10,6 +24,8 @@ function App() {
       once: true,
     });
   }, []);
+
+  const swiperRef = useRef(null);
 
   return (
     <div className="App">
@@ -168,11 +184,6 @@ function App() {
                     Home
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link pe-lg-5" href="blog.html">
-                    Blog
-                  </a>
-                </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link pe-lg-5" href="#" role="button">
                     {" "}
@@ -222,7 +233,6 @@ function App() {
           </div>
         </div>
       </nav>
-      {/* //TODO: */}
       <section id="hero" className="padding-medium">
         <div className="container text-white">
           <div className="text-center row justify-content-center">
@@ -435,40 +445,61 @@ function App() {
                   <h3 class="mb-4 display-3">
                     Core Skills<span class="text-[#e74c3c]">.</span>
                   </h3>
-                  <div class="mb-4 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Logo Design</h5>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Java Script Developer</h5>
                   </div>
-                  <div class="mb-4 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Web Design</h5>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Python Developer</h5>
                   </div>
-                  <div class="mb-4 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Brand Identity</h5>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Responsive Web Developer</h5>
                   </div>
-                  <div class="mb-4 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">UI/UX Prototyping</h5>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">
+                      Front-end Developer (React & Angular)
+                    </h5>
                   </div>
-                  <div class="mb-4 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Creative Strategy</h5>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">
+                      Front-end Unit testing (Angular & React)
+                    </h5>
+                  </div>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Data Analysis engineer</h5>
+                  </div>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Machine Learning</h5>
+                  </div>
+                  <div class="mb-4 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Big data engineer</h5>
                   </div>
                 </div>
               </div>
               <div class="mt-5 row" data-aos="fade-up">
                 <div class="mb-5 col-lg-6 mb-lg-0">
                   <h3 class="mb-4 display-3">
-                    Interests<span class="text-primary">.</span>
+                    Interests<span class="text-[#e74c3c]">.</span>
                   </h3>
-                  <div class="mb-5 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Photography</h5>
-                    <p>Capturing moments that inspire creativity.</p>
+                  <div class="mb-5 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Data-Driven</h5>
+                    <p>using ML insights to enhance front-end interactivity</p>
                   </div>
-                  <div class="mb-5 border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Sketching</h5>
-                    <p>Pen and paper concepts before digital execution.</p>
-                  </div>
-                  <div class="border-opacity-50 border-start border-primary ps-3">
-                    <h5 class="display-6">Traveling</h5>
+                  <div class="mb-5 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Intelligent-Interactivity</h5>
                     <p>
-                      Exploring cultures and landscapes to fuel design ideas.
+                      Focuses on AI-driven UI/UX (e.g., recommendation UIs,
+                      adaptive layouts).
+                    </p>
+                  </div>
+                  <div class="mb-5 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Algorithmic-Designer</h5>
+                    <p>Merges ML models with dynamic, responsive interfaces.</p>
+                  </div>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <h5 class="display-6">Model-to-Frontend</h5>
+                    <p>
+                      Specializes in deploying ML models into web apps
+                      (TensorFlow.js, LLM integrations).
                     </p>
                   </div>
                 </div>
@@ -476,22 +507,32 @@ function App() {
                   <h3 class="mb-4 display-3">
                     Education<span class="text-primary">.</span>
                   </h3>
-                  <div class="mb-5 border-opacity-50 border-start border-primary ps-3">
-                    <p class="text-primary fw-semibold">1990 - 1994</p>
+                  <div class="mb-5 border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <p class="text-[#e74c3c] fw-semibold">2015 - 2019</p>
                     <h5 class="display-6">
-                      Bachelors in Engineering in Information Technology
+                      Bachelors in Engineering in Computer science engineering
                     </h5>
                     <p>
-                      Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam.
-                      Impedit aperiam nesciunt facilis!
+                      Graduate in Software Engineering with distinction from
+                      Sadra University.
                     </p>
                   </div>
-                  <div class="border-opacity-50 border-start border-primary ps-3">
-                    <p class="text-primary fw-semibold">1994 - 1996</p>
-                    <h5 class="display-6">Masters in Data Analysis</h5>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3">
+                    <p class="text-[#e74c3c] fw-semibold">2019 - 2021</p>
+                    <h5 class="display-6">
+                      Masters in Artificial Intelligence (AI)
+                    </h5>
                     <p>
-                      Vitae aut atque fuga dolorem. Vel voluptatibus fugiat nam.
-                      Impedit aperiam nesciunt facilis!
+                      M.Sc. in Artificial Intelligence from Shahid Beheshti
+                      University, Tehran, graduating with an ‘Excellent’ thesis
+                      grade and a resulting{" "}
+                      <a
+                        className="text-[#9f2214]"
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0169260723004364"
+                      >
+                        Q1 journal publication
+                      </a>
+                      .
                     </p>
                   </div>
                 </div>
@@ -506,12 +547,13 @@ function App() {
           >
             <div class="text-center">
               <h3 class="display-3">
-                Latest projects<span class="text-primary">.</span>
+                Latest projects<span class="text-[#e74c3c]">.</span>
               </h3>
               <p>
-                Here’s a showcase of some of my favorite projects. <br /> Each
-                design tells a unique story and reflects the client’s brand
-                essence.
+                Here’s a showcase of some of my favorite projects. <br /> I
+                build React/Angular-based frontends and develop AI models,
+                delivering both user-centric interfaces and data-driven
+                intelligence.
               </p>
               <div class="my-5">
                 <p>
@@ -525,19 +567,19 @@ function App() {
                     class="px-5 py-3 mb-3 filter-button me-2"
                     data-filter=".logo"
                   >
-                    Logo
+                    AI
                   </button>
                   <button
                     class="px-5 py-3 mb-3 filter-button me-2"
                     data-filter=".web"
                   >
-                    Web Design
+                    Front-end
                   </button>
                   <button
                     class="px-5 py-3 mb-3 filter-button me-2"
                     data-filter=".mobile"
                   >
-                    Mobile App
+                    Articles
                   </button>
                 </p>
               </div>
@@ -547,14 +589,10 @@ function App() {
                 <div class="blog-post">
                   <div class="image-zoom rounded-3">
                     <a href="portfolio-details.html" class="blog-img">
-                      <img
-                        src="images/project1.jpg"
-                        alt="img"
-                        class="img-fluid"
-                      />
+                      <img src={prj1} alt="img" class="img-fluid" />
                     </a>
                   </div>
-                  <p class="mt-3 text-uppercase text-primary fw-semibold">
+                  <p class="mt-3 text-uppercase text-[#e74c3c] fw-semibold">
                     Web design
                   </p>
                   <h5 class="display-6">
@@ -568,14 +606,10 @@ function App() {
                 <div class="blog-post">
                   <div class="image-zoom rounded-3">
                     <a href="portfolio-details.html" class="blog-img">
-                      <img
-                        src="images/project2.jpg"
-                        alt="img"
-                        class="img-fluid"
-                      />
+                      <img src={prj2} alt="img" class="img-fluid" />
                     </a>
                   </div>
-                  <p class="mt-3 text-uppercase text-primary fw-semibold">
+                  <p class="mt-3 text-uppercase text-[#e74c3c] fw-semibold">
                     Web design
                   </p>
                   <h5 class="display-6">
@@ -589,14 +623,10 @@ function App() {
                 <div class="blog-post">
                   <div class="image-zoom rounded-3">
                     <a href="portfolio-details.html" class="blog-img">
-                      <img
-                        src="images/project3.jpg"
-                        alt="img"
-                        class="img-fluid"
-                      />
+                      <img src={prj3} alt="img" class="img-fluid" />
                     </a>
                   </div>
-                  <p class="mt-3 text-uppercase text-primary fw-semibold">
+                  <p class="mt-3 text-uppercase text-[#e74c3c] fw-semibold">
                     Web design
                   </p>
                   <h5 class="display-6">
@@ -610,14 +640,10 @@ function App() {
                 <div class="blog-post">
                   <div class="image-zoom rounded-3">
                     <a href="portfolio-details.html" class="blog-img">
-                      <img
-                        src="images/project4.jpg"
-                        alt="img"
-                        class="img-fluid"
-                      />
+                      <img src={prj4} alt="img" class="img-fluid" />
                     </a>
                   </div>
-                  <p class="mt-3 text-uppercase text-primary fw-semibold">
+                  <p class="mt-3 text-uppercase text-[#e74c3c] fw-semibold">
                     Web design
                   </p>
                   <h5 class="display-6">
@@ -631,14 +657,10 @@ function App() {
                 <div class="blog-post">
                   <div class="image-zoom rounded-3">
                     <a href="portfolio-details.html" class="blog-img">
-                      <img
-                        src="images/project5.jpg"
-                        alt="img"
-                        class="img-fluid"
-                      />
+                      <img src={prj5} alt="img" class="img-fluid" />
                     </a>
                   </div>
-                  <p class="mt-3 text-uppercase text-primary fw-semibold">
+                  <p class="mt-3 text-uppercase text-[#e74c3c] fw-semibold">
                     Web design
                   </p>
                   <h5 class="display-6">
@@ -652,14 +674,10 @@ function App() {
                 <div class="blog-post">
                   <div class="image-zoom rounded-3">
                     <a href="portfolio-details.html" class="blog-img">
-                      <img
-                        src="images/project6.jpg"
-                        alt="img"
-                        class="img-fluid"
-                      />
+                      <img src={prj6} alt="img" class="img-fluid" />
                     </a>
                   </div>
-                  <p class="mt-3 text-uppercase text-primary fw-semibold">
+                  <p class="mt-3 text-uppercase text-[#e74c3c] fw-semibold">
                     Web design
                   </p>
                   <h5 class="display-6">
@@ -697,105 +715,121 @@ function App() {
             >
               <div class="text-center">
                 <h3 class="display-3">
-                  Read our clients reviews<span class="text-primary">.</span>
+                  Read our clients reviews<span class="text-[#e74c3c]">.</span>
                 </h3>
               </div>
 
               <div class="mt-4 row justify-content-center">
                 <div class="col-md-7">
-                  <div class="swiper testimonial-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="text-center swiper-slide">
-                        <div class="testimonial-details">
-                          <svg class="text-primary" width="80" height="80">
+                  <div className="container">
+                    <Swiper
+                      onSwiper={(swiper) => {
+                        swiperRef.current = swiper;
+                      }}
+                      className="testimonial-swiper"
+                      modules={[Pagination, Navigation, Autoplay]} // Add Navigation module
+                      pagination={{
+                        clickable: true,
+                        el: ".testimonial-swiper .swiper-pagination",
+                      }}
+                      navigation={{
+                        nextEl: ".main-slider-button-next",
+                        prevEl: ".main-slider-button-prev",
+                      }}
+                      spaceBetween={30}
+                      slidesPerView={1}
+                      autoplay={{
+                        delay: 3000, // Auto-slide every 5 seconds
+                        disableOnInteraction: false, // Continue autoplay after user interactions
+                        pauseOnMouseEnter: true, // Pause on hover
+                      }}
+                      loop={true} // Enable infinite loop
+                    >
+                      <SwiperSlide className="text-center">
+                        <div className="testimonial-details">
+                          <svg
+                            className="text-[#e74c3c]"
+                            width="80"
+                            height="80"
+                          >
                             <use href="#quote-left"></use>
                           </svg>
-                          <p class="fs-2 lh-base fst-italic fw-light">
-                            Kiwi’s designs completely transformed our branding.
-                            Her attention to detail and creativity were
-                            incredible!
-                          </p>
-                          <div class="mt-4 text-center">
+                          <p className="fs-2 lh-base fst-italic fw-light">1</p>
+                          <div className="mt-4 text-center">
                             <img
                               src="assets/images/commentor3.jpg"
                               alt="img"
-                              class="img-fluid rounded-circle"
+                              className="img-fluid rounded-circle"
                             />
-                            <div class="mt-2">
-                              <p class="m-0 fw-bold">Emma Brown</p>
-                              <p class="m-0 fw-light">United States</p>
+                            <div className="mt-2">
+                              <p className="m-0 fw-bold">Emma Brown</p>
+                              <p className="m-0 fw-light">United States</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="text-center swiper-slide">
-                        <div class="testimonial-details">
-                          <svg class="text-primary" width="80" height="80">
+                      </SwiperSlide>
+
+                      <SwiperSlide className="text-center">
+                        <div className="testimonial-details">
+                          <svg
+                            className="text-[#e74c3c]"
+                            width="80"
+                            height="80"
+                          >
                             <use href="#quote-left"></use>
                           </svg>
-                          <p class="fs-2 lh-base fst-italic fw-light">
-                            Kiwi’s designs completely transformed our branding.
-                            Her attention to detail and creativity were
-                            incredible!
-                          </p>
-                          <div class="mt-4 text-center">
+                          <p className="fs-2 lh-base fst-italic fw-light">2</p>
+                          <div className="mt-4 text-center">
                             <img
                               src="assets/images/commentor2.jpg"
                               alt="img"
-                              class="img-fluid rounded-circle"
+                              className="img-fluid rounded-circle"
                             />
-                            <div class="mt-2">
-                              <p class="m-0 fw-bold">Emma Brown</p>
-                              <p class="m-0 fw-light">United States</p>
+                            <div className="mt-2">
+                              <p className="m-0 fw-bold">Emma Brown</p>
+                              <p className="m-0 fw-light">United States</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="text-center swiper-slide">
-                        <div class="testimonial-details">
-                          <svg className="text-primary" width="80" height="80">
+                      </SwiperSlide>
+
+                      <SwiperSlide className="text-center">
+                        <div className="testimonial-details">
+                          <svg
+                            className="text-[#e74c3c]"
+                            width="80"
+                            height="80"
+                          >
                             <use href="#quote-left"></use>
                           </svg>
-                          <p class="fs-2 lh-base fst-italic fw-light">
-                            Kiwi’s designs completely transformed our branding.
-                            Her attention to detail and creativity were
-                            incredible!
-                          </p>
-                          <div class="mt-4 text-center">
+                          <p className="fs-2 lh-base fst-italic fw-light">3</p>
+                          <div className="mt-4 text-center">
                             <img
                               src="images/commentor1.jpg"
                               alt="img"
-                              class="img-fluid rounded-circle"
+                              className="img-fluid rounded-circle"
                             />
-                            <div class="mt-2">
-                              <p class="m-0 fw-bold">Emma Brown</p>
-                              <p class="m-0 fw-light">United States</p>
+                            <div className="mt-2">
+                              <p className="m-0 fw-bold">Emma Brown</p>
+                              <p className="m-0 fw-light">United States</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="mt-4 swiper-pagination position-static d-lg-none d-block"></div>
+                      </SwiperSlide>
+
+                      <div className="mt-4 swiper-pagination position-static d-lg-none d-block"></div>
+                    </Swiper>
+
+                    <div
+                      className="pt-5 mt-5 position-absolute top-50 end-10 translate-middle-y me-5 main-slider-button-next d-lg-block d-none swiper-button-next"
+                      onClick={() => swiperRef.current?.slideNext()}
+                    ></div>
+                    <div
+                      className="pt-5 mt-5 position-absolute top-50 start-10 translate-middle-y ms-5 main-slider-button-prev d-lg-block d-none swiper-button-prev"
+                      onClick={() => swiperRef.current?.slidePrev()}
+                    ></div>
                   </div>
                 </div>
-              </div>
-              <div class="pt-5 mt-5 position-absolute top-50 end-0 translate-middle-y me-5 main-slider-button-next d-lg-block d-none">
-                <svg
-                  class="p-3 border border-opacity-25 arrow border-light rounded-circle"
-                  width="80"
-                  height="80"
-                >
-                  <use href="#arrow-right"></use>
-                </svg>
-              </div>
-              <div class="pt-5 mt-5 position-absolute top-50 start-0 translate-middle-y ms-5 main-slider-button-prev d-lg-block d-none">
-                <svg
-                  class="p-3 border border-opacity-25 arrow border-light rounded-circle"
-                  width="80"
-                  height="80"
-                >
-                  <use href="#arrow-left"></use>
-                </svg>
               </div>
             </div>
           </section>
