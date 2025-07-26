@@ -8,6 +8,11 @@ import prj3 from "./assets/images/project3.jpg";
 import prj4 from "./assets/images/project4.jpg";
 import prj5 from "./assets/images/project5.jpg";
 import prj6 from "./assets/images/project6.jpg";
+import ali from "./assets/images/ali.jpeg";
+import ati from "./assets/images/atefeh.jpeg";
+import abin from "./assets/images/abin.jpeg";
+import amir from "./assets/images/amir.jpeg";
+import shahab from "./assets/images/shahab.jpeg";
 
 // Updated imports (Swiper v9+)
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -147,7 +152,7 @@ function App() {
             </h1>
           </a>
 
-          <button
+          {/* <button
             className="shadow-none navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
@@ -155,14 +160,14 @@ function App() {
             aria-controls="offcanvasNavbar"
           >
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div
             className="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div className="offcanvas-header">
+            {/* <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 Menu
               </h5>
@@ -172,7 +177,7 @@ function App() {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
-            </div>
+            </div> */}
             <div className="offcanvas-body">
               <ul className="text-center navbar-nav align-items-center justify-content-end flex-grow-1">
                 <li className="nav-item">
@@ -184,7 +189,7 @@ function App() {
                     Home
                   </a>
                 </li>
-                <li className="nav-item dropdown">
+                {/* <li className="nav-item dropdown">
                   <a className="nav-link pe-lg-5" href="#" role="button">
                     {" "}
                     Articles
@@ -227,7 +232,7 @@ function App() {
                   >
                     Contact
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -264,7 +269,7 @@ function App() {
                   experiment, and grow.
                 </p>
               </div>
-              <a
+              {/* <a
                 href="portfolio.html"
                 className="mt-4 btn button rounded-pill position-relative pe-5 z-1"
                 data-aos="fade-up"
@@ -280,7 +285,7 @@ function App() {
                     <use href="#arrow-right"></use>
                   </svg>
                 </div>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -328,9 +333,9 @@ function App() {
                   <div class="d-flex justify-content-center align-items-center">
                     <h4
                       class="counter-value display-1 banner-size"
-                      data-count="500"
+                      data-count="2"
                     >
-                      500
+                      2
                     </h4>
                     <span class="text-[#e74c3c] display-1 fw-lighter">+</span>
                   </div>
@@ -340,9 +345,9 @@ function App() {
                   <div class="d-flex justify-content-center align-items-center">
                     <h4
                       class="counter-value display-1 banner-size"
-                      data-count="50"
+                      data-count="10"
                     >
-                      50
+                      10
                     </h4>
                     <span class="text-[#e74c3c] display-1 fw-lighter">+</span>
                   </div>
@@ -407,6 +412,18 @@ function App() {
                         of hands-on unit testing in Angular and React, helping
                         developers build confidence in test-driven development
                         (Jest/Karma/Testing Library).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-l-2 border-opacity-50 border-[#e74c3c] ps-3 mb-5">
+                    <p class="text-[#e74c3c] fw-semibold">2024</p>
+                    <h5 class="display-6">
+                      WIREs Data Mining and Knowledge Discovery reviewer
+                    </h5>
+                    <div className="flex justify-center ">
+                      <p className="w-[85%]">
+                        Reviewing an article in WIREs Data Mining and Knowledge
+                        Discovery
                       </p>
                     </div>
                   </div>
@@ -540,7 +557,7 @@ function App() {
             </div>
           </section>
 
-          <section
+          {/* <section
             id="portfolio"
             class="container padding-medium"
             data-aos="fade-up"
@@ -705,9 +722,9 @@ function App() {
                 </div>
               </a>
             </div>
-          </section>
+          </section> */}
 
-          <section id="testimonial" class="pt-0 padding-medium">
+          <section id="testimonial" class="pt-0 padding-medium mt-32">
             <div
               class="container position-relative"
               data-aos="fade-up"
@@ -715,7 +732,7 @@ function App() {
             >
               <div class="text-center">
                 <h3 class="display-3">
-                  Read our clients reviews<span class="text-[#e74c3c]">.</span>
+                  Recommendations<span class="text-[#e74c3c]">.</span>
                 </h3>
               </div>
 
@@ -754,16 +771,31 @@ function App() {
                           >
                             <use href="#quote-left"></use>
                           </svg>
-                          <p className="fs-2 lh-base fst-italic fw-light">1</p>
-                          <div className="mt-4 text-center">
+                          <p className="lh-base fst-italic fw-light text-[20px] text-justify ml-8">
+                            I've had the pleasure of working with Hossein
+                            Simchi, and his dedication and work ethic truly
+                            stand out. He is incredibly diligent, consistently
+                            putting in the effort to ensure projects are
+                            completed with the highest quality. Hossein is not
+                            only hardworking but also embraces challenges with
+                            enthusiasm, always ready to tackle complex tasks.
+                            What makes him unique is his openness to feedback —
+                            he graciously accepts technical tips and uses them
+                            to improve, showing his commitment to continuous
+                            learning and growth. His positive attitude and
+                            resilience make him an invaluable asset to any team
+                          </p>
+                          <div className="flex flex-col items-center justify-center mt-4 text-justify">
                             <img
-                              src="assets/images/commentor3.jpg"
+                              src={ali}
                               alt="img"
-                              className="img-fluid rounded-circle"
+                              className="img-fluid rounded-circle w-[50px] h-[50px]"
                             />
-                            <div className="mt-2">
-                              <p className="m-0 fw-bold">Emma Brown</p>
-                              <p className="m-0 fw-light">United States</p>
+                            <div className="flex flex-col items-center mt-2">
+                              <p className="m-0 fw-bold">Ali Mirzaie</p>
+                              <p className="m-0 fw-light">
+                                Senior Software Engineer
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -778,16 +810,25 @@ function App() {
                           >
                             <use href="#quote-left"></use>
                           </svg>
-                          <p className="fs-2 lh-base fst-italic fw-light">2</p>
-                          <div className="mt-4 text-center">
+                          <p className="lh-base fst-italic fw-light text-[20px] text-justify ml-8">
+                            Hossein is an active, responsible, hardworking,
+                            determined and intelligent student, as well as a
+                            knowledgeable and reliable person. Although I didn't
+                            work directly with Hossain, I have observed his hard
+                            work in our lab projects.
+                          </p>
+                          <div className="flex flex-col items-center justify-center mt-4 text-justify">
                             <img
-                              src="assets/images/commentor2.jpg"
+                              src={ati}
                               alt="img"
-                              className="img-fluid rounded-circle"
+                              className="img-fluid rounded-circle w-[50px] h-[50px]"
                             />
-                            <div className="mt-2">
-                              <p className="m-0 fw-bold">Emma Brown</p>
-                              <p className="m-0 fw-light">United States</p>
+                            <div className="flex flex-col items-center mt-2">
+                              <p className="m-0 fw-bold">Atefe Aghaei</p>
+                              <p className="m-0 fw-light">
+                                PhD in Artificial Intelligence, Shahid Beheshti
+                                University
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -802,16 +843,128 @@ function App() {
                           >
                             <use href="#quote-left"></use>
                           </svg>
-                          <p className="fs-2 lh-base fst-italic fw-light">3</p>
-                          <div className="mt-4 text-center">
+                          <p className="lh-base fst-italic fw-light text-[20px] text-justify ml-8">
+                            This letter serves to confirm the academic
+                            qualifications of Mr. Hossein Simchi, a Master’s
+                            graduate in Computer Engineering with a
+                            specialization in Artificial Intelligence from
+                            Shahid Beheshti University, for admission to a Ph.D.
+                            program. Mr. Simchi has completed the courses
+                            Pattern Recognition and Machine Learning under my
+                            supervision, achieving excellent grades. Following
+                            these courses, he actively contributed as a teaching
+                            assistant for both subjects. Mr. Simchi is among the
+                            few outstanding Master’s students with remarkable
+                            problem-solving abilities. His proficiency in Python
+                            programming and expertise in utilizing machine
+                            learning and deep learning libraries are highly
+                            commendable. Moreover, his ethical conduct,
+                            professionalism, punctuality, and diligence are
+                            exemplary. Given my familiarity with his creative
+                            and innovative mindset, I am confident that he will
+                            excel in his doctoral studies. Therefore, I strongly
+                            recommend his admission as a Ph.D. candidate and
+                            believe he will make significant contributions to
+                            your institution.
+                          </p>
+                          <div className="flex flex-col items-center justify-center mt-4 text-justify">
                             <img
-                              src="images/commentor1.jpg"
+                              src={abin}
                               alt="img"
-                              className="img-fluid rounded-circle"
+                              className="img-fluid rounded-circle w-[50px] h-[50px]"
                             />
-                            <div className="mt-2">
-                              <p className="m-0 fw-bold">Emma Brown</p>
-                              <p className="m-0 fw-light">United States</p>
+                            <div className="flex flex-col items-center mt-2">
+                              <p className="m-0 fw-bold">Ahmad Ali Abin</p>
+                              <p className="m-0 fw-light">
+                                Professor of Artificial Intelligence and faculty
+                                member at Shahid Beheshti University
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+
+                      <SwiperSlide className="text-center">
+                        <div className="testimonial-details">
+                          <svg
+                            className="text-[#e74c3c]"
+                            width="80"
+                            height="80"
+                          >
+                            <use href="#quote-left"></use>
+                          </svg>
+                          <p className="lh-base fst-italic fw-light text-[20px] text-justify ml-8">
+                            Hossein is an exceptional colleague with a
+                            remarkable ability to swiftly grasp new concepts.
+                            His quick learning and problem-solving skills make
+                            him an invaluable asset to any team. Highly
+                            recommended for his outstanding intellect and
+                            collaborative approach.
+                          </p>
+                          <div className="flex flex-col items-center justify-center mt-4 text-justify">
+                            <img
+                              src={amir}
+                              alt="img"
+                              className="img-fluid rounded-circle w-[50px] h-[50px]"
+                            />
+                            <div className="flex flex-col items-center mt-2">
+                              <p className="m-0 fw-bold">
+                                Amir Hossein Khajegan
+                              </p>
+                              <p className="m-0 fw-light">
+                                Senior Software Engineer
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+
+                      <SwiperSlide className="text-center">
+                        <div className="testimonial-details">
+                          <svg
+                            className="text-[#e74c3c]"
+                            width="80"
+                            height="80"
+                          >
+                            <use href="#quote-left"></use>
+                          </svg>
+                          <p className="lh-base fst-italic fw-light text-[20px] text-justify ml-8">
+                            It is my pleasure to write this letter of
+                            recommendation for Mr Hossein Simchi. Hossein and I
+                            have collaborated on two joint research projects. In
+                            the first project, we proposed a domain adaptation
+                            algorithm to evaluate the quality of CMR images when
+                            there is limited access to labelled data. Then, in
+                            another study, we presented a deep meta-learning
+                            method for CMR image quality assessment. Hossein
+                            collaborated in data preparation, code
+                            implementation and experiments in both projects. His
+                            ability in Python programming and using Tensorflow,
+                            Keras and PyTorch libraries is remarkable. He is
+                            also very interested in learning new concepts in
+                            medical image analysis. In my opinion, Hossein is a
+                            good choice for the PhD program due to his hard
+                            work, teamwork spirit, problem-analysis capacity and
+                            passion. Besides, considering his programming
+                            abilities, I highly recommend him for research and
+                            development positions. I hope that this
+                            recommendation will inform you about Hossein's
+                            educational and research status to a great extent.
+                            Anyway, if any additional information is required,
+                            please do not hesitate to contact me.
+                          </p>
+                          <div className="flex flex-col items-center justify-center mt-4 text-justify">
+                            <img
+                              src={shahab}
+                              alt="img"
+                              className="img-fluid rounded-circle w-[50px] h-[50px]"
+                            />
+                            <div className="flex flex-col items-center mt-2">
+                              <p className="m-0 fw-bold">Shahabedin Nabavi</p>
+                              <p className="m-0 fw-light">
+                                PhD in Artificial Intelligence, Shahid Beheshti
+                                University
+                              </p>
                             </div>
                           </div>
                         </div>
